@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Enter short, descriptive title here</title>
+</head>
+<body>
+
+    <form action="libreria/libros/crear" method="post">
+        {% csrf_token %}
+        # ID
+        <label for="id">ID<input type="number" id="id" name="id" value=""></label>
+        # NOMBRE
+        <label for="nombre">NOMBRE<input type="text" id="nombre" name="nombre" value=""></label>
+        #FECHA
+        <label for="fecha">FECHA PUBLICACION<input type="date" id="fecha"  name="fecha" value=""></label>
+        <input type="submit" value="crear_libro">
+    </form>
+
+</body>
+</html>
